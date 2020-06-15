@@ -24,7 +24,7 @@ public class populateDBResource {
 
     private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(
                 "pu",
-                "jdbc:mysql://localhost:3306/ca3",
+                "jdbc:mysql://localhost:3306/Eksamen",
                 "dev",
                 "ax2",
                 EMF_Creator.Strategy.DROP_AND_CREATE);

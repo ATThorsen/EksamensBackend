@@ -7,7 +7,7 @@
     <version>1</version>
     <packaging>war</packaging>
 
-    <name>CA3</name>
+    <name>3SemesterEksamen</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
