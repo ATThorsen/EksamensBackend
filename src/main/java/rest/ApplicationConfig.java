@@ -25,13 +25,10 @@ public class ApplicationConfig extends Application {
         resources.add(errorhandling.AuthenticationExceptionMapper.class);
         resources.add(errorhandling.GenericExceptionMapper.class);
         resources.add(org.glassfish.jersey.server.wadl.internal.WadlResource.class);
-        resources.add(rest.CatFactResource.class);
         resources.add(rest.DemoResource.class);
-        resources.add(rest.KanyeResource.class);
-        resources.add(rest.PokeResource.class);
+        resources.add(rest.RecipeResource.class);
         resources.add(rest.RenameMeResource.class);
-        resources.add(rest.UsslessFactResource.class);
-        resources.add(rest.asyncdemo.class);
+        resources.add(rest.WeekMenuResource.class);
         resources.add(rest.populateDBResource.class);
         resources.add(security.JWTAuthenticationFilter.class);
         resources.add(security.LoginEndpoint.class);
