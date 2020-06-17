@@ -104,7 +104,7 @@ public class SetupTestUsers {
     em.persist(w6);
     em.persist(w7);
     
-    
+      System.out.println("Heyayaya");
     
     
     
