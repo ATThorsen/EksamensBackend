@@ -54,7 +54,7 @@ public class UserFacade {
 
    
 
-    em.getTransaction().begin();
+   
     
 
       WeekMenu w1 = new WeekMenu(1, 2020);
@@ -109,15 +109,9 @@ public class UserFacade {
     w1.addRecipeToWeekMenu(r6);
     w1.addRecipeToWeekMenu(r7);
     
-    User user = new User("user1", "test123");
-    User admin = new User("admin1", "test123");
-    User both = new User("user_admin1", "test123");
-
-    if(admin.getUserPass().equals("test")||user.getUserPass().equals("test")||both.getUserPass().equals("test"))
-      throw new UnsupportedOperationException("You have not changed the passwords");
-    em.getTransaction().begin();
-
-    em.persist(r1);
+     em.getTransaction().begin();
+    
+        em.persist(r1);
     em.persist(r2);
     em.persist(r3);
     em.persist(r4);
@@ -133,6 +127,16 @@ public class UserFacade {
     em.persist(w5);
     em.persist(w6);
     em.persist(w7);
+    
+    User user = new User("user1", "test123");
+    User admin = new User("admin1", "test123");
+    User both = new User("user_admin1", "test123");
+
+    if(admin.getUserPass().equals("test")||user.getUserPass().equals("test")||both.getUserPass().equals("test"))
+      throw new UnsupportedOperationException("You have not changed the passwords");
+    em.getTransaction().begin();
+
+
     
     Role userRole = new Role("user");
     Role adminRole = new Role("admin");
